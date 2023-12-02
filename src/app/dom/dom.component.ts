@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 // @ts-ignore
-import {yellowsubmarine} from "./Funcion.js";
+import {mostrarValors, yellowsubmarine} from "./Funcion.js";
 //@ts-ignore
 import {changeSize} from "./Funcion.js";
 //@ts-ignore
@@ -29,8 +29,10 @@ export class DomComponent implements OnInit{
       countWord();
       this.comptador = countWord();
       imagen();
+      mostrarValors()
     }
 
 
   protected readonly document = document;
+  protected readonly mostrarValors = mostrarValors;
 }
