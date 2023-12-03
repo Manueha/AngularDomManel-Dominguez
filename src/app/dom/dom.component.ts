@@ -1,13 +1,15 @@
 import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 // @ts-ignore
-import {yellowsubmarine} from "./Funcion.js";
+import {All, yellowsubmarine} from "./Funcion.js";
 //@ts-ignore
 import {changeSize} from "./Funcion.js";
 //@ts-ignore
 import {countWord } from "./Funcion.js";
 //@ts-ignore
 import {imagen} from "./Funcion.js";
+//@ts-ignore
+import { All } from "./Funcion.js";
 
 @Component({
   selector: 'app-dom',
@@ -29,6 +31,7 @@ export class DomComponent implements OnInit{
       countWord();
       this.comptador = countWord();
       imagen();
+      All();
     }
 
 
