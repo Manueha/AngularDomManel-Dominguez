@@ -9,7 +9,7 @@ import {countWord } from "./Funcion.js";
 //@ts-ignore
 import {imagen} from "./Funcion.js";
 //@ts-ignore
-import {patata} from "./Funcion.js";
+import {valorsDesplegable} from "./Funcion.js";
 
 @Component({
   selector: 'app-dom',
@@ -31,7 +31,7 @@ export class DomComponent implements OnInit{
     countWord();
     this.comptador = countWord();
     imagen();
-    patata();
+    valorsDesplegable("llistaValors", "mostraValors");
   }
 
   protected readonly document = document;
